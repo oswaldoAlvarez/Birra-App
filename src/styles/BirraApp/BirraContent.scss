@@ -1,0 +1,24 @@
+.Birra-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 227, 177);
+  // position: relative;
+  .Birra-components {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 600px) {
+  .Birra-content {
+    height: 100%;
+    .Birra-components {
+      flex-direction: column;
+    }
+  }
+}

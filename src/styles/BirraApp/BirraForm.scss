@@ -1,0 +1,146 @@
+@import "../Vars.scss";
+
+.formWrapper {
+  // position: absolute;
+  // left: 20px;
+  // top: 30px;
+  // height: 365px;
+  color: gray;
+  padding: 30px 5px 30px 5px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $white_color;
+  border-radius: 8px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  .formulario {
+    height: 50%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .formTitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 20px;
+      position: relative;
+      .titleWeatherApp {
+        line-height: 1;
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+    .inputForm {
+      font-size: 20px;
+      margin-bottom: 10px;
+      width: 100%;
+      margin-right: 1.5%;
+      padding-left: 10px;
+      border: 1px solid $border_gray;
+      border-radius: 5px;
+      outline: 0;
+    }
+    .btnForm {
+      //margin-top: 25px;
+      color: #f06c00;
+      background: $white_color;
+      border: 1px solid #f06c00 !important;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-family: sans-serif;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      border: none;
+      outline: 0;
+      &:hover {
+        background: #f06c00;
+        color: $white_color;
+      }
+    }
+  }
+  .general-info__addInfo {
+    width: 80%;
+    .general-info_addInfo-city {
+      text-align: center;
+      font-weight: bold;
+      border: 1px solid red;
+      color: red;
+      margin-top: 15px;
+      border-radius: 8px;
+      background: #ffdada;
+      font-family: sans-serif;
+      &:hover {
+        color: #ffdada;
+        background-color: red;
+      }
+    }
+  }
+  .general_info {
+    margin-top: 20px;
+    width: 250px;
+    // height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+    font-size: 20px;
+    font-family: sans-serif;
+    &__title {
+      line-height: 1;
+      text-align: center;
+      margin: 10px;
+      font-size: 16px;
+    }
+    div {
+      .btnForm {
+        //margin-top: 25px;
+        color: #f06c00;
+        background: $white_color;
+        border: 1px solid #f06c00 !important;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        border: none;
+        outline: 0;
+        &:hover {
+          background: #f06c00;
+          color: $white_color;
+        }
+      }
+      div {
+        .margin-r5 {
+          margin-right: 5px;
+          .Birra-Error-title {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  .pAbsolute {
+    position: absolute;
+  }
+}
+
+@media (max-width: 600px) {
+  .formWrapper {
+    margin-top: 20px;
+  }
+}

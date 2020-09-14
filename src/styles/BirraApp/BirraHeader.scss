@@ -1,0 +1,28 @@
+.Birra-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: rgb(240, 108, 0);
+  height: 60px;
+  &__content {
+    width: 30%;
+    height: 70%;
+    display: inherit;
+    justify-content: space-around;
+    align-items: inherit;
+    .Birra-header__wrapper-link {
+      margin: 0 10px 0 10px;
+      .Birra-header__content-link {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        &:hover,
+        :active,
+        :focus {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

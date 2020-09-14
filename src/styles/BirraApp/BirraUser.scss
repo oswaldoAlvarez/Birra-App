@@ -1,0 +1,55 @@
+.tablaForm {
+  padding: 15px;
+  border: 1px solid orange;
+  border-radius: 8px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  &__container {
+    border: 1px solid orange;
+  }
+  &__header {
+    border-bottom: 1px solid orange;
+    &-container {
+      &-title {
+        padding: 0 5px 0 5px;
+        text-align: center;
+      }
+    }
+  }
+  &__body {
+    &-container {
+      text-align: center;
+      &-content {
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .tablaForm {
+    width: 310px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    padding: 0;
+    &__header {
+      border-bottom: 1px solid orange;
+      border-top: 1px solid orange;
+      &-container {
+        padding: 0 5px 0 5px;
+        &-title {
+          padding: 5px 5px 5px;
+          text-align: center;
+          // border-right: 1px solid orange;
+        }
+      }
+    }
+    &__body {
+      &-container {
+        &-content {
+          padding: 5px 0 5px 0;
+        }
+      }
+    }
+  }
+}

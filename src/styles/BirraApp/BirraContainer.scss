@@ -1,0 +1,13 @@
+body {
+  margin: 0px !important;
+  &::-webkit-scrollbar {
+    background-color: rgb(247, 207, 134);
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(240, 108, 0);
+    border-radius: 6px;
+  }
+  .Birra-container {
+  }
+}
